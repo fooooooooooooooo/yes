@@ -13,7 +13,7 @@ namespace ConsoleApp2
             user.daysUntilBirthday = program.DaysUntilBirthday(user.birthDate);
             user.age = program.CalculateAge(user.birthDate);
             Console.Write("Enter gender: ");
-            program.CheckGender();
+            user.gender = program.CheckGender();
             user.firstName = user.name.Split(' ')[0];
             if (user.name.Split(' ').Length > 1) {
                 user.lastName = user.name.Split(' ')[1];
